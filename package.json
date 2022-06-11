@@ -1,0 +1,77 @@
+{
+  "name": "js-starter",
+  "version": "0.0.1",
+  "description": "A boilerplate for starting js code",
+  "keywords": [
+    "js-starter",
+    "boilerplate"
+  ],
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --coverage",
+    "jest:clear:cache": "jest --clearCache",
+    "lint": "eslint \"src/**/*.js\"",
+    "linting": "eslint '**/*.js' --ignore-pattern node_modules/",
+    "start": "node dist/server.js",
+    "build": "babel src --out-dir dist --copy-files",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "author": {
+    "name": "Build For SDG",
+    "email": "buildforsdg@andela.com"
+  },
+  "homepage": "https://github.com/BuildForSDG/js-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuildForSDG/js-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BuildForSDG/js-starter/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "^7.10.2",
+    "africastalking": "^0.4.7",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3",
+    "yup": "^0.28.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.8.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.4.0",
+    "mongodb-memory-server": "^6.6.0",
+    "parcel-bundler": "^1.12.4",
+    "regenerator-runtime": "^0.13.5",
+    "supertest": "^4.0.2"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "engines": {
+    "node": "10.x"
+  }
+}

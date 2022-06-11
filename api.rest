@@ -1,0 +1,34 @@
+@host=http://localhost:3000/api/v1/
+
+GET {{host}}/farmer/all
+###
+@phoneNumber = +254737445860
+
+GET {{host}}/farmers/get-user-by-phoneNumber/
+Content-Type: application/json
+
+{
+
+    "firstname":"Mwas",
+    "lastname":"fram",
+    "idNumber": "123457",
+    "phoneNumber": "+254737445860",
+    "email":"mwas1@gmail.com",
+    "password": "guh12345",
+  
+}
+
+###
+POST {{host}}/farmers/register
+Content-Type: application/json
+
+{
+  "input": {
+    "firstname":"test firstnam",
+    "lastname":"lastame",
+    "idNumber": "1234458",
+    "phoneNumber": "+254726251268",
+    "email":"mwas5@gmail.com",
+    "password": "guh12345"
+  }
+}
